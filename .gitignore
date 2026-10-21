@@ -28,3 +28,5 @@ __pycache__/
 .venv/
 .ipynb_checkpoints/
 .DS_Store
+# 現地調査の個人記録（訪問日時など。調査終了後にまとめて公開する）
+fieldwork/private/
