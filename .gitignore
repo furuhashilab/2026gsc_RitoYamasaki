@@ -1,0 +1,30 @@
+# 一次データ（出所から再取得する）
+*.las
+*.laz
+*.tif
+*.tiff
+dl/
+raw/
+/gis/
+qgis_tokyo_acoustic_research/
+*.zip
+
+# 中間生成物
+parkmap_*.json
+tiles_needed.json
+handoff/
+*.log
+
+# 録音データ（容量が大きく、公開可否の判断が必要）
+recordings/*
+!recordings/.gitkeep
+!recordings/README.md
+*.wav
+*.WAV
+
+# 環境
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
