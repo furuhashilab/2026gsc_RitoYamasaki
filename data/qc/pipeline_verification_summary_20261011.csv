@@ -1,0 +1,14 @@
+﻿item,description,value
+layer_counts,Treatment / Control_V2 / Excluded_Core / 合計,30 / 8195 / 545 / 8770
+crs,GeoPackage 全レイヤの srs_id,EPSG:6677 (JGD2011 平面直角座標系第9系)
+block_treatment,Treatment の区部 / 多摩等,0 / 30
+block_control,Control_V2 の区部 / 多摩等,4428 / 3767
+area_mismatch_trt,"Treatment で 幾何面積/属性面積 が [0.67,1.5] 外",3 / 30
+area_mismatch_ctl,"Control_V2 で 幾何面積/属性面積 が [0.67,1.5] 外",198 / 8193（別に属性面積=0/欠損が 2 件）
+pr_threshold_geom,Protection Ratio(幾何分母) >=10/25/50/75/90%,12 / 11 / 7 / 5 / 3
+pr_threshold_attr,Protection Ratio(属性分母) >=10/25/50/75/90%,12 / 11 / 8 / 7 / 4
+tiny_controls,Control_V2 のうち 300 m2 未満 / 1000 m2 未満,1569 / 4291
+tier2_union_tama_k30,PR>=10%の12件 × 多摩内k=30近傍 の一意Control数,320
+tier2_union_tama_cal020,PR>=10%を含む全30件 × 多摩内 δ=0.20 の一意Control数,3506
+manifest,output/source_manifest_sha256.csv の有無,欠如（未生成）
+midori_h30,data/midori_h30/ の中身,空（H30みどりGISは未取得）

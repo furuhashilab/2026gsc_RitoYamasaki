@@ -1,0 +1,10 @@
+﻿pr,scenario,n_treat,assigned,good_15pt,strict_10pt,dist_med
+10,S1_area_forest_grass_water,11,11,6,3,0.434
+10,S2_area_forest_water,11,11,5,4,0.398
+10,S3_area_forest,11,11,8,6,0.213
+25,S1_area_forest_grass_water,10,10,6,3,0.388
+25,S2_area_forest_water,10,10,6,4,0.326
+25,S3_area_forest,10,10,8,6,0.21
+50,S1_area_forest_grass_water,6,6,4,2,0.324
+50,S2_area_forest_water,6,6,4,2,0.281
+50,S3_area_forest,6,6,5,3,0.21
