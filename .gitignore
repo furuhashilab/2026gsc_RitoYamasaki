@@ -1,32 +1,42 @@
-# 一次データ（出所から再取得する）
-*.las
-*.laz
-*.tif
-*.tiff
-dl/
-raw/
-/gis/
-qgis_tokyo_acoustic_research/
-*.zip
+# === FP-Nav 再現実験リポジトリ用 .gitignore ===
+# 方針: 公開モデル重み・MP3D・GTデータ・大容量の実験中間生成物は再配布しない（各配布元の規約に従う）
 
-# 中間生成物
-parkmap_*.json
-tiles_needed.json
-handoff/
+# モデル重み・チェックポイント（HF keeehan/FloorPlan-VLN, 16.6GB など）
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+
+# Matterport3D シーン・RGB・評価GT（要規約同意・非商用学術限定。再配布しない）
+*.glb
+*.ply
+mp3d/
+mp3d_floorplan/
+*_gt.json.gz
+val_*.json.gz
+
+# 実験の中間生成物・一次ログ・大容量入力
+data/
+results/
+logs/
 *.log
+*.mp4
+frames/
+*.npy
+*.npz
 
-# 録音データ（容量が大きく、公開可否の判断が必要）
-recordings/*
-!recordings/.gitkeep
-!recordings/README.md
-*.wav
-*.WAV
-
-# 環境
+# 環境・キャッシュ
 __pycache__/
 *.pyc
 .venv/
+venv/
 .ipynb_checkpoints/
 .DS_Store
-# 現地調査の個人記録（訪問日時など。調査終了後にまとめて公開する）
-fieldwork/private/
+
+# 秘匿情報（念のため: 誤ってコミットしない）
+.env
+*.key
+*.token
+secrets*
